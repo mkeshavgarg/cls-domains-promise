@@ -1,7 +1,7 @@
 {
   "name": "cls-domains-promise",
   "version": "0.0.2",
-  "description": "Make your promises play work with the continuation-local-storage and node.js domains module.",
+  "description": "promise patch to work better with continuation-local-storage and node.js domains ",
   "main": "index.js",
   "repository": {
     "type": "git",
