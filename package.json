@@ -1,6 +1,6 @@
 {
   "name": "cls-domains-promise",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "promise patch to work better with continuation-local-storage and node.js domains ",
   "main": "index.js",
   "repository": {
