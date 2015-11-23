@@ -1,0 +1,21 @@
+{
+  "name": "cls-domains-promise",
+  "version": "0.0.1",
+  "description": "Make your promises play work with the continuation-local-storage and node.js domains module.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mkeshavgarg/cls-domains-promise"
+  },
+  "keywords": [
+    "continuation-local-storage",
+    "domains",
+    "mongoose",
+    "mpromise",
+    "promise.js"
+  ],
+  "author": "Keshav Garg",
+  "bugs": {
+    "url": "https://github.com/mkeshavgarg/cls-domains-promise/issues"
+  }
+}
