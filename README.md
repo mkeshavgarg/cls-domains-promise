@@ -22,7 +22,7 @@ Eg: 2: To patch promise.js for node.js domains
     var proto = promise.prototype.then;
     patchIt(appSpace, proto);
 
-Voila! now use it as usual. After library is patched, use it as usual.
+Voila! now use it as usual.
 
 ### Bugs and Issues
 Have a bug or an issue with this? [Open a new Issue](https://github.com/mkeshavgarg/cls-domains-promise/issues)
