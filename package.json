@@ -1,9 +1,12 @@
 {
   "name": "cls-domains-promise",
-  "version": "0.0.5",
+  "version": "1.0.0",
   "description": "promise patch to work better with continuation-local-storage and node.js domains ",
   "homepage": "https://github.com/mkeshavgarg/cls-domains-promise",
   "main": "index.js",
+  "scripts":          {
+    "test": "mocha test"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/mkeshavgarg/cls-domains-promise.git"
@@ -20,5 +23,11 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/mkeshavgarg/cls-domains-promise/issues"
+  },
+  "devDependencies":  {
+    "mocha":                      "^2.2.5",
+    "mongoose":                   "^4",
+    "should":                     "4.1.0",
+    "continuation-local-storage": "*"
   }
 }

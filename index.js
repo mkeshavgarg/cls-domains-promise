@@ -4,14 +4,13 @@
     namespace eg: process.domain, cls
     proto eg: Promise.prototype, Bluebird.prototype
  */
-
 module.exports = function patchIt(namespace, proto) {
 
-    if (!namespace && typeof namespace.bind !== 'function') {
+    if (!namespace || typeof namespace.bind !== 'function') {
         throw new TypeError("must include namespace to patch library against");
     }
 
-    if (!proto && !proto.then && typeof proto.then!== 'function') {
+    if (!proto || !proto.then || typeof proto.then!== 'function') {
         throw new TypeError("proto specified does not match promise library");
     }
 
