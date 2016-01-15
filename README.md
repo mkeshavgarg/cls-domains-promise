@@ -6,20 +6,20 @@ It utilizes **then** function in promise libraries and makes it safe to work wit
 ### How to use it ?
 Eg: 1: To patch mongoose internal promise library (mpromise) for cls
 
+    var patchIt = require('cls-domains-promise');
     var cls = require('continuation-local-storage'); 
     var mongoose = require('mongoose');
     var proto = mongoose.Mongoose.prototype.Promise.prototype;
-    var patchIt = require('cls-domains-promise');
     // or cls.getNamespace if exists
     var appSpace = cls.createNamespace('app');
     patchIt(appSpace, proto);
 
 Eg: 2: To patch promise.js for node.js domains
 
-    var mongoose = require('promise');
     var patchIt = require('cls-domains-promise');
+    var promise = require('promise');
+    var proto = promise.prototype;
     var appSpace = process.domain;
-    var proto = promise.prototype.then;
     patchIt(appSpace, proto);
 
 Voila! now use it as usual.
